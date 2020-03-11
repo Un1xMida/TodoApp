@@ -11,16 +11,17 @@ interface TodoItemAction {
   payload: ITodoItem
 }
 
+interface State {
+  todos: ITodoItem[]
+}
+
 //Reducer
-const todoItemReducer = (state: ITodoItem[], action: TodoItemAction): ITodoItem[] => {
+const todoItemReducer = (state: State, action: TodoItemAction): ITodoItem[] => {
   switch (action.type) {
     case "ADD":
-      console.log('state', state)
-      return state
-    case "DELETE":
-      return state
+      return { todos: { state.todos } }
     default:
-      return state
+      return state.todos
   }
 }
 
