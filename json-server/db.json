@@ -1,12 +1,12 @@
 {
   "todos": [{
-      "id": 1,
-      "text": "json-server",
+      "id": 0,
+      "name": "json-server",
       "completed": true
     },
     {
-      "id": 2,
-      "text": "json-server2",
+      "id": 1,
+      "name": "json-server3",
       "completed": true
     }
   ]
